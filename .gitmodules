@@ -1,0 +1,6 @@
+[submodule "api-template"]
+	path = api-template
+	url = git@github.com:premkumaranand/api-template.git
+[submodule "admin-site-template"]
+	path = admin-site-template
+	url = git@github.com:premkumaranand/admin-site-template.git
