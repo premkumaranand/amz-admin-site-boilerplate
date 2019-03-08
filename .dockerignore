@@ -1,0 +1,8 @@
+.git*
+.vagrant
+.dockerignore
+Dockerfile
+Jenkinsfile
+.vscode
+.idea
+**/*/node_modules
