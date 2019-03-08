@@ -3,6 +3,11 @@ FROM nginx
 ## Replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
+RUN rm -f /etc/nginx/conf.d/default.conf && mkdir -p /etc/nginx/sites-enabled
+COPY config/nginx.conf /etc/nginx/nginx.conf
+COPY config/admin.conf /etc/nginx/sites-enabled/admin.conf
+COPY config/api.conf /etc/nginx/sites-enabled/api.conf
+
 RUN apt-get update
 RUN apt-get -y install sudo curl procps net-tools
 
