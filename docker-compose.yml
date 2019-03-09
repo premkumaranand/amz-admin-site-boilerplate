@@ -4,7 +4,7 @@ services:
   az-template:
     image: aztemplate:latest
     ports:
-      - 8090:80
+      - 80:80
     environment:
       - ENVIRONMENT=dev
     container_name: az-template

@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  az-template:
+    image: aztemplate:latest
+    ports:
+      - 8090:80
+    environment:
+      - ENVIRONMENT=dev
+    container_name: az-template
+    build:
+      context: admin-site-template
+      dockerfile: Dockerfile
+    volumes:
+      - ./api-template:/var/www/html/api
+      - ./admin-site-template:/var/www/html/admin-site
+    tty: true
