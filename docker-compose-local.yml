@@ -9,8 +9,8 @@ services:
       - ENVIRONMENT=dev
     container_name: az-template
     build:
-      context: admin-site-template
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile.local
     volumes:
       - ./api-template:/var/www/html/api
       - ./admin-site-template:/var/www/html/admin-site
