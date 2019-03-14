@@ -6,6 +6,6 @@ services:
     ports:
       - 80:80
     environment:
-      - ENVIRONMENT=dev
+      - ENVIRONMENT=production
     container_name: az-template
     tty: true

@@ -38,6 +38,17 @@ dprune
 
 ## How to deploy in production
 [TODO] Not tested yet
+1. Build production image
+    ```bash
+    source scripts/shortcuts.sh
+    
+    # to pickup local setup
+    setprod
+    
+    # shorthand for building your docker
+    dbuild
+    ```
+2. Deploy the image (Where? How? is a [TODO])
 
 ## How to create your project from this boilerplate
 [TODO]: This is manual for now. Has a potential to write a script.
@@ -55,5 +66,6 @@ Login does not work in the first instance (at least when using mlab mongo db).
 Make a Postman call to [http://sample.api.amazinsellers.com:8090/users](http://sample.api.amazinsellers.com:8090/users)
 
 ## TODO
+* Add pm2 watch for API
 * Test deploying in a server
 * Set up mongodb. Set up a default user.
